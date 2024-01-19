@@ -3,15 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ToDo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Josefin+Sans&family=Kalam:wght@300;400&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="tarefa.css">
 </head>
 <body>
-    <h1>Lista de Tarefas</h1>
-    <form>
-        <input type="text" placeholder="Ex.: lavar a louça">
-        <button type="submit">Adicionar à lista</button>
-    </form>
+    
+    <div class="card-form">
+        <h1>ToDo</h1>
+        <form id="form-nova-tarefa">
+            <input id="input-nova-tarefa" type="text" placeholder="Ex.: lavar a louça">
+            <button type="submit">Adicionar à lista</button>
+        </form>
+    </div>
+    <div class="card-lista">
+        <ul class="lista-tarefas">
+            <li class="item-da-lista">
+                <p class="tarefa-da-lista">
+                    treinar o cachorro da vizinha a não fazer xixi sentado fora da privada depois da meia noite
+                </p>
+                <div class="container-botoes">
+                    <button class="btn-concluir"><img src="./imagens/check.png" title="Marcar como concluída" alt="Checar"></button>
+                    <button class="btn-excluir"><img src="./imagens/Xicon.png" title="Cancelar tarefa" alt="Cancelar"></button>    
+                </div>
+            </li>
+            
+        </ul>
+    </div>
 
 
     
@@ -19,4 +40,4 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="tarefa.js"></script>
 </body>
-</html>l
+</html>
